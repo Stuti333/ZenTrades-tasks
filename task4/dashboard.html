@@ -3,6 +3,7 @@
     <head>
         <title>Dashboard</title>
         <link rel="stylesheet" href="dashboard.css">
+        
     </head>
     <body>
         <div class="cm">
@@ -40,7 +41,7 @@
                         <p class="box-content">Jobs Completed</p>
                     </div>
                     <div class="box4">
-                        <div p="tcc"></p>
+                        <p id="tcc"></p>
                         <p class="box-content">Total Cancelled</p>
                     </div>
             </div>
@@ -49,12 +50,19 @@
         <div class="grid2">
         <div class="rbjl">
             <h4 class="rbjl1">Revenue By Job Location</h4>
-            <div id="chart1"></div>
+            <div id="chart1">
+                <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+            </div>
         </div>
         <div class="rbjt">
             <h4 class="rbjt1">Revenue By Job Type</h4>
-            <div id="chart2"></div>
+            <div id="chart2">
+                <canvas id="myChart1" style="width:100%;max-width:700px"></canvas>
+            </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="dashboard_style.js"></script>
+    
     </body>
 </html>

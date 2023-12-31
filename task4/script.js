@@ -17,11 +17,17 @@ function validatePassword() {
             break;
         }
     }
+    var correctPassword='SmartServTest@123';
     var hasNumber = /\d/.test(password);
     var hasSpecialChars = /^[a-zA-Z0-9@]+$/.test(password);
     if (!hasUppercase || !hasNumber || !hasSpecialChars) {
         alert('Password must contain an uppercase letter, a number, and only allow @ as a special character.');
         passwordInput.value = '';
+    }
+    if (password === correctPassword) {
+        window.location.href = 'dashboard.html';
+    } else {
+        document.getElementById('errorMessage').textContent = 'Incorrect password. Please try again.';
     }
 }
 
