@@ -1,0 +1,37 @@
+body{
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.box1{
+    background-color: rgba(15, 14, 14, 0.947);
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 450px;
+    border-radius: 12px;
+    padding: 50px;
+}
+.logo{
+    margin: 25px;
+}
+.fm{
+   
+    margin: 20px;
+}
+.uname,.pwd,.log{
+    padding: 15px;
+    border-radius: 10px;
+    width: 350px;
+    font-size: larger;
+    font-weight: bold;
+}
+.log{
+    background-color: rgba(13, 173, 13, 0.848);
+    color: white;
+    border-radius: 18px;
+    width: 385px;
+}
+.forgot1{
+    color:grey;
+}
