@@ -19,14 +19,14 @@ body{
    
     margin: 20px;
 }
-.uname,.pwd,.log{
+#uname,#pwd,#log{
     padding: 15px;
     border-radius: 10px;
     width: 350px;
     font-size: larger;
     font-weight: bold;
 }
-.log{
+#log{
     background-color: rgba(13, 173, 13, 0.848);
     color: white;
     border-radius: 18px;

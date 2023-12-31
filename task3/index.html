@@ -3,6 +3,8 @@
     <head>
         <title>Smart Serv Login Page</title>
         <link rel="stylesheet" href="index.css">
+        <script src="script.js" defer></script>
+
     </head>
     <body>
         <div class="box1">
@@ -11,18 +13,19 @@
                     <img src="zentrades logo.jpg" alt="SmartServ logo">
                 </div>
                 <div class="fm">
-                    <input type="email" class="uname" placeholder="Username">
+                    <input type="text" id="uname" placeholder="Username" onblur="validateEmail()" >
                 </div>
                 <div class="fm">
-                    <input type="password" class="pwd" placeholder="Password">
+                    <input type="password" id="pwd" placeholder="Password" onblur="validatePassword()">
                 </div>
                 <div class="fm">
-                    <button type="submit" class="log">Login</button>
+                    <button type="submit" id="log" onclick="submitForm()">Login</button>
                 </div>
                 <div class="forgot">
                     <a href="#" class="forgot1">Forgot your password?</a>
                 </div>
             </form>
         </div>
+        
     </body>
 </html>
